@@ -874,12 +874,16 @@
 <script>
     function changeLanguage(lng){
         if (lng == 'ua') {
-            document.getElementById('ua').style.display = 'block';
-            document.getElementById('en').style.display = 'none';
+            // document.getElementById('ua').style.display = 'block';
+            document.getElementById("ua").style="display:block";
+            document.getElementById("en").style="display:none";
+            // document.getElementById('en').style.display = 'none';
         }
         if (lng == 'en') {
-            document.getElementById('en').style.display = 'block';
-            document.getElementById('ua').style.display = 'none';
+            document.getElementById("ua").style="display:none";
+            document.getElementById("en").style="display:block";
+            // document.getElementById('en').style.display = 'block';
+            // document.getElementById('ua').style.display = 'none';
         }
     }
 </script>
