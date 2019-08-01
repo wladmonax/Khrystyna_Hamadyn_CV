@@ -17,9 +17,9 @@
     </div>
     <div class="col-2">
         <div class="form-group">
-            <select class="form-control" id="sel2">
-                <option onclick="changeLanguage('en')">EN</option>
-                <option onclick="changeLanguage('ua')">UA</option>
+            <select onchange="changeLanguage(this.value)" class="form-control" id="sel2">
+                <option>EN</option>
+                <option>UA</option>
             </select>
         </div>
     </div>
@@ -175,7 +175,16 @@
                             <div class="row">
                                 <div class="col" style="padding-left: 65px">
                                     <div class="row">
-                                        <div class="col"><p class="font_title font-20-px">FocusOn</p></div>
+                                        <div class="col"><h4 class="font_title font-20-px m-t-15 underline ">"Мінпрод Галичина" (!FESTrepublic)</h4></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>Internship.</h5>
+                                            <h6>2019 (2m)</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><p class="font_title font-20-px underline">FocusOn</p></div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
@@ -598,7 +607,16 @@
                             <div class="row">
                                 <div class="col" style="padding-left: 65px">
                                     <div class="row">
-                                        <div class="col"><p class="font_title font-20-px">FocusOn</p></div>
+                                        <div class="col"><h4 class="font_title font-20-px m-t-15 underline ">"Мінпрод Галичина" (!FESTrepublic)</h4></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5>Стажування.</h5>
+                                            <h6>2019 (2міс)</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col"><p class="font_title font-20-px m-t-15 underline">FocusOn</p></div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
@@ -873,17 +891,14 @@
 </body>
 <script>
     function changeLanguage(lng){
-        if (lng == 'ua') {
-            // document.getElementById('ua').style.display = 'block';
-            document.getElementById("ua").style="display:block";
-            document.getElementById("en").style="display:none";
-            // document.getElementById('en').style.display = 'none';
+        console.log(lng)
+        if (lng == 'UA') {
+            document.getElementById('ua').style.display = 'block';
+            document.getElementById('en').style.display = 'none';
         }
-        if (lng == 'en') {
-            document.getElementById("ua").style="display:none";
-            document.getElementById("en").style="display:block";
-            // document.getElementById('en').style.display = 'block';
-            // document.getElementById('ua').style.display = 'none';
+        if (lng == 'EN') {
+            document.getElementById('en').style.display = 'block';
+            document.getElementById('ua').style.display = 'none';
         }
     }
 </script>
